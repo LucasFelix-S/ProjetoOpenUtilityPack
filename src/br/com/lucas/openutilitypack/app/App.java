@@ -4,7 +4,7 @@ import br.com.lucas.openutilitypack.file.EscreverArquivoDeTexto;
 import br.com.lucas.openutilitypack.file.LerArquivoDeTexto;
 
 public class App {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         LerArquivoConfiguracaoBd.lendoArquivo();
         LerArquivoDeTexto.lendoArquivoDeTexto();
         EscreverArquivoDeTexto.escrevendoArquivoDeTexto();

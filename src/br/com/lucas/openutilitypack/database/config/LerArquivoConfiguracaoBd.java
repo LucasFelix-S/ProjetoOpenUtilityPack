@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 public class LerArquivoConfiguracaoBd {
     public static void lendoArquivo() {
         try{
-            String arquivo = Files.readString(Paths.get("credenciais.json"));
+            String arquivo = Files.readString(Paths.get("config.json"));
 
             Gson gson = new Gson();
             PojoArquivoConfiguracaoBd pac = gson.fromJson(arquivo, PojoArquivoConfiguracaoBd.class);
