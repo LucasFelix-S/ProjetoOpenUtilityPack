@@ -24,7 +24,8 @@ src/
 
 ## Funcionalidades Atuais
 ### - Configuração (JSON)
-- Leitura de arquivo JSON com URL, usuário e senha do SQL Server.
+- Criação de um arquivo de configuração de conexão com o Banco de Dados (config.json).
+- Leitura do arquivo JSON (config.json) com URL, usuário e senha do SQL Server.
 - Conversão para POJO para facilitar manipulação.
 
 ### - Conexão com SQL Server
