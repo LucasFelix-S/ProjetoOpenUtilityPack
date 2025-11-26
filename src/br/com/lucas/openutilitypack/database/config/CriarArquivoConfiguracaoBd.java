@@ -6,7 +6,7 @@ import java.io.IOException;
 public class CriarArquivoConfiguracaoBd {
     public static void arquivoConfiguracaoBd() {
         try{
-            BufferedWriter bw = new BufferedWriter(new FileWriter("properties"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("properties.json"));
             bw.write("{\n" +
                     "    \"url\": \"\",\n" +
                     "    \"user\": \"\",\n" +
