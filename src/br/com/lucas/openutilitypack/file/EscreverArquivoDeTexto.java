@@ -4,9 +4,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class EscreverArquivoDeTexto {
-    public static void escrevendoArquivoDeTexto(){
+    public static void escrevendoArquivoDeTexto(String nomeArquivoSaida){
         try{
-            BufferedWriter bw = new BufferedWriter(new FileWriter("dados-escrita-java.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(nomeArquivoSaida));
             bw.write("Esse é um arquivo de texto escrito a partir do Java!");
             bw.flush();
             System.out.println("Arquivo de texto gerado com sucesso!");

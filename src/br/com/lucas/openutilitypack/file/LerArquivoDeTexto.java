@@ -3,12 +3,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class LerArquivoDeTexto {
-    public static String lendoArquivoDeTexto(){
+    public static String lendoArquivoDeTexto(String arquivo){
         String linha = "";
         try{
-            String arquivo = "dados-leitura-java.csv";
             BufferedReader br = new BufferedReader(new FileReader(arquivo));
-
             while((linha = br.readLine()) != null) {
                 System.out.println(linha);
             }

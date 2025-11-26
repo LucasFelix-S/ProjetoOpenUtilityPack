@@ -9,6 +9,7 @@ credenciais.json
 config.json
 dados-escrita-java.txt
 dados-leitura-java.csv
+properties.json
 
 ### Eclipse ###
 .apt_generated

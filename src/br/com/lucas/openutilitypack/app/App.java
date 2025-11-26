@@ -6,7 +6,7 @@ import br.com.lucas.openutilitypack.file.LerArquivoDeTexto;
 public class App {
     public static void main(String[] args) {
         LerArquivoConfiguracaoBd.lendoArquivo();
-        LerArquivoDeTexto.lendoArquivoDeTexto();
-        EscreverArquivoDeTexto.escrevendoArquivoDeTexto();
+        LerArquivoDeTexto.lendoArquivoDeTexto("dados-leitura-java.csv");
+        EscreverArquivoDeTexto.escrevendoArquivoDeTexto("dados-escrita-java.txt");
     }
 }
