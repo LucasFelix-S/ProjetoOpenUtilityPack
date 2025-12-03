@@ -8,12 +8,9 @@ public class LerArquivoConfiguracaoBd {
     public static void lendoArquivo() {
         try{
             String arquivo = Files.readString(Paths.get("properties.json"));
-
             Gson gson = new Gson();
             PojoArquivoConfiguracaoBd pac = gson.fromJson(arquivo, PojoArquivoConfiguracaoBd.class);
-
-            ConectaSqlServer sqlServer = new ConectaSqlServer(pac.getUrl(), pac.getUser(), pac.getSenha());
-            sqlServer.conexao();
+            ConectaSqlServer.conexao(pac.getUrl(), pac.getUser(), pac.getSenha());
         } catch(Exception e){
             System.err.println("Erro durante a leitura do arquivo de configuração na classe 'LerArquivoDeConfiguracaoBd'= "
                     + e.getMessage());
