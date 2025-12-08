@@ -7,9 +7,9 @@ out/
 *.iml
 credenciais.json
 config.json
-dados-escrita-java.txt
-dados-leitura-java.csv
 properties.json
+arquivoPadrao.txt
+arquivoPadraoNull.txt
 
 ### Eclipse ###
 .apt_generated

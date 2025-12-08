@@ -1,9 +1,21 @@
 package br.com.lucas.openutilitypack.app;
-import br.com.lucas.openutilitypack.database.config.LerArquivoConfiguracaoBd;
+import br.com.lucas.openutilitypack.file.ReadingTextFile;
+import br.com.lucas.openutilitypack.file.WritingTextFile;
 
 public class App {
     public static void main(String[] args) {
-        LerArquivoConfiguracaoBd.lendoArquivo();
+        //Testando a leitura...
+        String arquivo = "teste.txt";
+        ReadingTextFile.showTextFile(arquivo);
+
+        //Testando a escrita com o construtor vazio(nulo)...
+        WritingTextFile writingTextFileNull = new WritingTextFile(null);
+        writingTextFileNull.writeTextFile("arquivoPadraoNull.txt");
+
+        //Testando a escrita com o construtor 'cheio'(com dados para escrita)...
+        WritingTextFile writingTextFile = new WritingTextFile("Escrevendo algo...");
+        writingTextFile.writeTextFile("arquivoPadrao.txt");
+
 
     }
 }
