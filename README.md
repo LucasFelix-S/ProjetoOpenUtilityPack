@@ -12,9 +12,8 @@ src/
     │   └── App
     ├── database
     │   ├── config
-    │   │   ├── LerArquivoConfiguracaoBd
-    │   │   └── PojoArquivoConfiguracaoBd
-    │   │   └── CriarArquivoConfiguracaoBd   
+    │   │   ├── DataBaseConfigPojo
+    │   │   └── DataBaseManager  
     │   └── connection
     │       └── SqlServerConnection
     └── file
