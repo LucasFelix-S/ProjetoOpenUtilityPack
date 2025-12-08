@@ -13,9 +13,7 @@ src/
     ├── database
     │   ├── config
     │   │   ├── DataBaseConfigPojo
-    │   │   └── DataBaseManager  
-    │   └── connection
-    │       └── SqlServerConnection
+    │   │   └── DataBaseManager
     └── file
         ├── WritingTextFile
         └── ReadingTextFile
@@ -23,7 +21,7 @@ src/
 
 ## Funcionalidades Atuais
 ### - Configuração (JSON)
-- Criação de um arquivo de configuração de conexão com o Banco de Dados (config.json).
+- Criação de um arquivo de configuração de conexão com o Banco de Dados (properties.json).
 - Leitura do arquivo JSON (config.json) com URL, usuário e senha do SQL Server.
 - Conversão para POJO para facilitar manipulação.
 
