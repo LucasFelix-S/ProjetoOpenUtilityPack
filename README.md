@@ -16,10 +16,10 @@ src/
     │   │   └── PojoArquivoConfiguracaoBd
     │   │   └── CriarArquivoConfiguracaoBd   
     │   └── connection
-    │       └── ConectaSqlServer
+    │       └── SqlServerConnection
     └── file
-        ├── EscreverArquivoDeTexto
-        └── LerArquivoDeTexto
+        ├── WritingTextFile
+        └── ReadingTextFile
 ```
 
 ## Funcionalidades Atuais

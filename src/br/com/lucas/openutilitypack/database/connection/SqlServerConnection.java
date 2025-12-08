@@ -1,17 +1,27 @@
 package br.com.lucas.openutilitypack.database.connection;
-
+import br.com.lucas.openutilitypack.database.config.DataBaseConfigPojo;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SqlServerConnection {
-    public static Connection conexao(String url, String user, String senha) {
+    String dataBaseUrl;
+    String dataBaseUser;
+    String dataBasePassword;
+
+    public SqlServerConnection(DataBaseConfigPojo dataBaseConfigPojo) {
+        this.dataBaseUrl = dataBaseConfigPojo.getDataBaseUrl();
+        this.dataBaseUser = dataBaseConfigPojo.getDataBaseUser();
+        this.dataBasePassword = dataBaseConfigPojo.getDataBasePassword();
+    }
+
+    public Connection dataBaseConnection() {
         Connection connection = null;
         try{
-            connection = DriverManager.getConnection(url, user, senha);
-            System.out.println("Conexao no SQLServer realizada com sucesso.");
+            connection = DriverManager.getConnection(dataBaseUrl, dataBaseUser, dataBasePassword);
+            System.out.println("Connection made successfully");
         } catch(SQLException e) {
-            System.err.println("Erro na conexão com o Banco de Dados na classe 'ConectaSqlServer'= "
+            System.err.println("Error connecting to the database "
                     + e.getMessage());
         }
         return connection;

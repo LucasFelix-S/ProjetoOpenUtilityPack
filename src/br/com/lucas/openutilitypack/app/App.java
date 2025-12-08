@@ -1,4 +1,7 @@
 package br.com.lucas.openutilitypack.app;
+import br.com.lucas.openutilitypack.database.config.DataBaseConfigPojo;
+import br.com.lucas.openutilitypack.database.config.DataBaseManager;
+import br.com.lucas.openutilitypack.database.connection.SqlServerConnection;
 import br.com.lucas.openutilitypack.file.ReadingTextFile;
 import br.com.lucas.openutilitypack.file.WritingTextFile;
 
@@ -16,6 +19,7 @@ public class App {
         WritingTextFile writingTextFile = new WritingTextFile("Escrevendo algo...");
         writingTextFile.writeTextFile("arquivoPadrao.txt");
 
-
+        //Testando a conexão com o Banco de Dados...
+        DataBaseManager.readingPropertiesFile();
     }
 }
