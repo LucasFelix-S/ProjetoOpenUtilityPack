@@ -4,13 +4,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class WritingTextFile {
-    String content;
+    String nameOutputFile;
 
-    public WritingTextFile(String content){
-        this.content = content;
+    public WritingTextFile(String nameOutputFile){
+        this.nameOutputFile = nameOutputFile;
     }
 
-    public void writeTextFile(String nameOutputFile) {
+    public void writeTextFile(String content) {
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(nameOutputFile))) {
             if(content != null) {
                 bw.write(content);

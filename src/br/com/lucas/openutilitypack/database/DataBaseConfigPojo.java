@@ -1,4 +1,4 @@
-package br.com.lucas.openutilitypack.database.config;
+package br.com.lucas.openutilitypack.database;
 
 public class DataBaseConfigPojo {
     private String DataBaseUrl;

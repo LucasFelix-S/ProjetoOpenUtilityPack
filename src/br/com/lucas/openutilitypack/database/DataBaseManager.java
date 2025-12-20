@@ -1,4 +1,4 @@
-package br.com.lucas.openutilitypack.database.config;
+package br.com.lucas.openutilitypack.database;
 import com.google.gson.Gson;
 import java.io.*;
 import java.nio.file.Files;
@@ -24,16 +24,10 @@ public class DataBaseManager {
     public static Connection connectionDataBase() {
         Connection connection = null;
         try{
-            //=======================
-            //Reading properties file
-            //=======================
             String propertiesFile = Files.readString(Paths.get("properties.json"));
             Gson gson = new Gson();
             DataBaseConfigPojo dbPojo = gson.fromJson(propertiesFile, DataBaseConfigPojo.class);
 
-            //==========================
-            //Connecting to the database
-            //==========================
             connection = DriverManager.getConnection(dbPojo.getDataBaseUrl(),
                                                                 dbPojo.getDataBaseUser(),
                                                                 dbPojo.getDataBasePassword());

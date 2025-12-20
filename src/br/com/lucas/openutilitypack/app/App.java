@@ -1,5 +1,5 @@
 package br.com.lucas.openutilitypack.app;
-import br.com.lucas.openutilitypack.database.config.DataBaseManager;
+import br.com.lucas.openutilitypack.database.DataBaseManager;
 
 public class App {
     public static void main(String[] args) {
