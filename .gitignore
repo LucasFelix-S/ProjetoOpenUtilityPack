@@ -5,11 +5,9 @@ out/
 .kotlin
 .idea/
 *.iml
-credenciais.json
-config.json
-properties.json
-arquivoPadrao.txt
-arquivoPadraoNull.txt
+*.json
+*.csv
+*.txt
 
 ### Eclipse ###
 .apt_generated
