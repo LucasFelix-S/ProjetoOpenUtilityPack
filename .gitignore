@@ -8,6 +8,7 @@ out/
 *.json
 *.csv
 *.txt
+*.properties
 
 ### Eclipse ###
 .apt_generated
