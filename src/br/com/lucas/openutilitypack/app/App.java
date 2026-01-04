@@ -1,9 +1,10 @@
 package br.com.lucas.openutilitypack.app;
 
-import br.com.lucas.openutilitypack.database.CreateDataBaseProperties;
+import br.com.lucas.openutilitypack.database.DataBaseConnection;
 
 public class App {
     public static void main(String[] args) {
-        CreateDataBaseProperties.creatingDataBaseProperties();
+        DataBaseConnection dataBaseConnection = new DataBaseConnection();
+        dataBaseConnection.connection();
     }
 }
